@@ -3,7 +3,7 @@ import User from '../User/User';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
-    console.log(users);
+    // console.log(users);
     useEffect(() => {
         const url = `https://jsonplaceholder.typicode.com/users`;
         fetch(url)
@@ -19,6 +19,7 @@ const Users = () => {
                     user={user}
                 ></User>)
             }
+            
         </div>
     );
 };
