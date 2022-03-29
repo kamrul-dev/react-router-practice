@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import User from '../User/User';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
@@ -12,6 +13,12 @@ const Users = () => {
     return (
         <div>
             <h2>This is users list page.</h2>
+            {
+                users.map(user => <User
+                    key={user.id}
+                    user={user}
+                ></User>)
+            }
         </div>
     );
 };
