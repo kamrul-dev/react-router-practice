@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 const PostDetail = () => {
     const { postId } = useParams();
-    const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState({});
     useEffect(() => {
         const url = `https://jsonplaceholder.typicode.com/posts/${postId}`;
         fetch(url)
