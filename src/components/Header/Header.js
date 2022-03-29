@@ -10,6 +10,7 @@ const Header = () => {
             <nav>
                 <Link className='nav-item' to="/">Home</Link>
                 <Link className='nav-item' to="/users">Users</Link>
+                <Link className='nav-item' to="/posts">Posts</Link>
                 <Link className='nav-item' to="/about">About</Link>
             </nav>
         </div>
